@@ -1,0 +1,9 @@
+id,lagradouro,cep,cidade,uf
+1,"Rua das Flores, 123",01000-000,São Paulo,SP
+2,"Av. Rio Branco, 456",20000-000,Rio de Janeiro,RJ
+3,"Av. Brasil, 789",30000-000,Belo Horizonte,MG
+4,"Rua da Bahia, 321",40000-000,Salvador,BA
+5,"Rua Paraná, 654",80000-000,Curitiba,PR
+6,"Av. Ceará, 777",60000-000,Fortaleza,CE
+7,"Rua Recife, 222",50000-000,Recife,PE
+8,"Av. Piauí, 888",64000-000,Teresina,PI

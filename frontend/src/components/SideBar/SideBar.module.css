@@ -1,0 +1,45 @@
+.container {
+    background-color: var(--verde-principal);
+    width: 400px;
+}
+
+.container .areaLogo {
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.areaNav {
+}
+
+.areaNav ul {
+    margin: 0 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.areaNav ul li {
+    color: #EAEDF2;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.areaNav ul li:hover {
+    color: rgb(179, 179, 179);
+    transition-duration: 0.2s;
+}

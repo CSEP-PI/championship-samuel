@@ -4,6 +4,7 @@ import Times from '../pages/Times'
 import Jogadores from '../pages/Jogadores'
 import Estadios from '../pages/Estadios'
 import DetalhesCamp from '../pages/DetalhesCamp'
+import Partidas from '../pages/Partidas'
 
 
 export default function Rotas(){
@@ -15,6 +16,7 @@ export default function Rotas(){
                 <Route path='/jogadores' element={<Jogadores/>}/>
                 <Route path='/estadios' element={<Estadios/>}/>
                 <Route path='/detalhes-campeonato' element={<DetalhesCamp/>}/>
+                <Route path='/detalhes-campeonato/partidas/' element={<Partidas/>}/>
             </Routes>
         </BrowserRouter>
     )

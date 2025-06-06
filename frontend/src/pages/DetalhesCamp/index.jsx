@@ -7,6 +7,7 @@ import { getTabela } from '../../services/campeonato';
 
 
 export default function DetalhesCamp() {
+    const navigate = useNavigate()
     const [tabela, setTabela] = useState([])
 
     useEffect(() => {
@@ -32,7 +33,7 @@ export default function DetalhesCamp() {
                 <section className={styles.sectionTabela}>
                     <header>
                         <h1>Tabela de classificação - 2025</h1>
-                        <button>Ver partidas</button>
+                        <button onClick={() => navigate('partidas/')}>Ver partidas</button>
                     </header>
 
                     <div>

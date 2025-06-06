@@ -9,13 +9,17 @@
 }
 
 :root {
-    --verde-principal: #145821;
+    --verde-principal: #308840;
     --texto-black: #2b2b2b;
 }
 
 body {
     min-height: 100vh;
     width: 100%;
-    background-color: #e3e4e6;
+    background-color: #e0e0e0;
     overflow: hidden;
+}
+
+h2 {
+    color: var(--texto-black);
 }

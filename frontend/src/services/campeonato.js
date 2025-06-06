@@ -6,7 +6,17 @@ export async function getCampeonatos(setData) {
         console.log(response.data)
         setData(response.data)
     } catch (error) {
-        console.log('Erro ao buscar campeoanatos: ', error)
+        console.log('Erro ao buscar campeoanatos: ', error.message)
+    }
+}
+
+export async function getTabela(setData) {
+    try {
+        const response = await api.get('/tabela/')
+        console.log('TABELA: ', response.data.tabela)
+        setData(response.data.tabela)
+    } catch (error) {
+        console.log('Erro ao buscar tabela: ', error.message)
     }
 }
 

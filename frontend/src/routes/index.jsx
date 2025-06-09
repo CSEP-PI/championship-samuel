@@ -15,7 +15,7 @@ export default function Rotas(){
                 <Route path='/times' element={<Times/>}/>
                 <Route path='/jogadores' element={<Jogadores/>}/>
                 <Route path='/estadios' element={<Estadios/>}/>
-                <Route path='/detalhes-campeonato' element={<DetalhesCamp/>}/>
+                <Route path='/detalhes-campeonato/:result' element={<DetalhesCamp/>}/>
                 <Route path='/detalhes-campeonato/partidas/' element={<Partidas/>}/>
             </Routes>
         </BrowserRouter>

@@ -17,6 +17,8 @@ class EdicaoSerializer(serializers.ModelSerializer):
         fields = '__all__'
     
 class PartidaSerializer(serializers.ModelSerializer):
+    timem_nome = serializers.CharField(source='time_mandante.nome', read_only=True)
+    timev_nome = serializers.CharField(source='time_visitante.nome', read_only=True)
     class Meta:
         model = Partida
         fields = '__all__'

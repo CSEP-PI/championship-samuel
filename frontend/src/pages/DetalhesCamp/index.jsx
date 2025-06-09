@@ -3,15 +3,19 @@ import {useNavigate} from 'react-router-dom'
 import SideBar from '../../components/SideBar'
 import { useState, useEffect } from 'react';
 import Tabela from '../../components/Tabela';
-import { getTabela } from '../../services/campeonato';
+import { getCampeonato, getTabela } from '../../services/campeonato';
+import { useParams } from 'react-router-dom';
 
 
 export default function DetalhesCamp() {
     const navigate = useNavigate()
     const [tabela, setTabela] = useState([])
+    const [campeanato, setCampeoanto] =useState([])
+    const {result} = useParams()
 
     useEffect(() => {
         getTabela(setTabela)
+        getCampeonato(setCampeoanto, result)
     }, [])
 
     
@@ -26,14 +30,14 @@ export default function DetalhesCamp() {
 
                     </div>
 
-                    <h1>Nome Campeonato</h1>
+                    <h1>{campeanato.nome}</h1>
                     <p>Descrição simples do campeonato</p>    
                 </section>
 
                 <section className={styles.sectionTabela}>
                     <header>
                         <h1>Tabela de classificação - 2025</h1>
-                        <button onClick={() => navigate('partidas/')}>Ver partidas</button>
+                        <button onClick={() => navigate('/detalhes-campeonato/partidas/')}>Ver partidas</button>
                     </header>
 
                     <div>
